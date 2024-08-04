@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,553;1,553&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* --primary-color: rgba(245, 242, 242, 0.664); */
+    --primary-color: #f5f2f2;
+    --primary-paddingInline: 100px;
+    --grey-color: rgb(85, 85, 85);
+    --black-color: rgb(0, 0, 0);
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--primary-color);
+}
+
+nav {
+    height: 15vh;
+    padding: 30px var(--primary-paddingInline);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navName h3 {
+    font-weight: 300;
+    font-style: normal;
+    font-size: 28px;
+    line-height: normal;
+}
+
+.nav-content {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-content li {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 10px;
+    list-style: none;
+    /* border: 1px solid #cccfdb; */
+    border-radius: 9px;
+}
+.nav-content li a{
+    color: var(--black-color);
+    text-decoration: none;
+} 
+.nav-content li a:hover {
+    color: var(--grey-color);
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: var(--black-color);
+  }
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    margin-bottom : -10px;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #135f85;
+    transform-origin: bottom right;
+    transition: transform 0.55s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+/* .nav-content li:hover{
+    color: var(--grey-color);
+    cursor: pointer;
+    border: 1px   var(--grey-color);
+    text-decoration: underline;
+} */
+
+/* the nav section finished here */
+
+/* profile section */
+.profile {
+    /* width: 100%; */
+    height: calc(100% - 17vh) ;
+    padding-top: 20px;
+    padding-inline: var(--primary-paddingInline);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 133px;
+    margin: 105px 167px;
+}
+
+.img-box>img {
+    width: 380px;
+    height: 380px;
+    display: flex;
+    border-radius: 50%;
+    background: var(--primary-color);
+
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hello i'm */
+.content-box h4 {
+    color: var(--grey-color);
+    font-size: 16px;
+    /* text-align: center; */
+    font-weight: 600;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+}
+
+/* Soumya */
+.content-box h2 {
+    color: var(--black-color);
+    font-size: 38px;
+    /* text-align: center; */
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+
+}
+
+/* frontend developer */
+.content-box h3 {
+    color: var(--grey-color);
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+
+}
+
+.button-box {
+    display: flex; 
+    gap: 20px ;
+    /* justify-content: space-between; */
+    margin-bottom: 22px;
+}
+.cv-button{
+    margin-top: 10px;
+    font-weight: 750;
+    padding: 13px;
+    border: 2px solid var(--black-color);
+    border-radius: 41px;
+}
+.cv-button:hover{
+    cursor: pointer;
+    background-color:var(--black-color);
+    color: white;
+    font-weight: 780;
+}
+
+.contact-button{
+    background-color: var(--grey-color);
+    color: white;
+    margin-top: 10px;
+    font-weight: 780;
+    padding: 13px;
+    /* border: 2px solid rgba(0, 0, 0, 0.603); */
+    border: 2px solid var(--grey-color);
+    border-radius: 41px;
+}
+
+.contact-button:hover{
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+}
+
+.Social{
+    display: flex;
+    gap:30px;
+    font-size: 30px;
+    justify-content: center;
+    margin-top: 5px;
+}
+.Social li{
+    list-style: none;
+}
+.linked:hover{
+    color: #1f9bf2;
+    cursor: pointer;
+    
+}
+.github:hover{
+    color: rgb(113, 6, 113);
+    cursor: pointer;
+    
+}
