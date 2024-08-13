@@ -18,6 +18,10 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--primary-color);
+   
+    /* nigth mode */
+    /* background-color: #212121;
+    color: white; */
 }
 
 nav {
@@ -209,4 +213,31 @@ nav {
     color: rgb(113, 6, 113);
     cursor: pointer;
     
+}
+.about-head-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-content{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-inline: var(--primary-paddingInline);
+    gap: 186px;
+    margin: 105px 167px;
+}
+.about-skill{
+    display: flex;
+    gap: 30px;
+}
+.about-skill-data{
+    border: 2px solid;
+    padding: 20px;
+    height: 227px;
+    width: 348px;
+    border-radius: 43px;
+    padding: 75px;
 }
